@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* MACROAREE */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 83px;
+    color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: calc(100% - 166px); */
+    width: 200px;
+    padding: 15px 0;
+}
+
+/* FINE MACROAREE */
+
+.spotify-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 200px;
+    padding: 15px 20px;
+}
+
+.spotify-logo:hover {
+    cursor: pointer;
+}
+
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.spotify-logo h1 {
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+.upgrade-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 200px;
+}
+
+.upgrade-button button {
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.upgrade-button button:hover {
+    cursor: pointer;
+    background-color: #1ed760;
+    color: black;
+}
+
+nav .nav-macro {
+    color: lightgray;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+nav .nav-macro a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+nav .nav-macro li {
+    padding:10px 0 0 20px;
+}
+
+nav .nav-macro li:hover {
+    border-left: 2px solid #1ed760;
+    color: white;
+}
+
+nav .nav-macro i {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    font-size: 23px;
+}
+
+nav .nav-macro small {
+    margin-left: 15px;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+
+.playlist a:first-child li {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.playlist a {
+    text-decoration: none;
+}
+
+.playlist a li {
+    color: lightgrey;
+    text-transform: capitalize;
+    padding:10px 0 0 20px;
+}
+
+.playlist a li:hover {
+    color: white;
+}
+
+.playlist a li i{
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+.playlist a li small {
+    margin-left: 15px;
+}
+
+.installapp-nav {
+    margin: 300px auto 0 auto;
+    width: 80%;
+    border-bottom: 1px solid lightgrey;
+    padding:10px 0;
+}
+
+.installapp-nav:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.installapp-nav i {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.user {
+    cursor: pointer;
+    color: white;
+    width: 80%;
+    padding:20px 0 0 20px;
+}
+
+.user:hover i {
+    color: #1ed760;
+}
+
+.user i {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.user small {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+}
