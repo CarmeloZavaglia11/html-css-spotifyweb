@@ -21,6 +21,7 @@
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    z-index: 99;
 }
 
 aside {
@@ -32,9 +33,32 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* height: calc(100% - 166px); */
+    height: calc(100% - 217px);
     width: 200px;
     padding: 15px 0;
+    z-index: 99;
+}
+
+.main-screen {
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    top: 83px;
+    width: calc(100% - 200px );
+    height: 749.6px;
+    background: rgb(30,215,96);
+    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 35%, rgba(0,0,0,1) 100%); 
+}
+
+.player {
+    height: 134px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
 }
 
 /* FINE MACROAREE */
@@ -51,10 +75,10 @@ aside {
     cursor: pointer;
 }
 
- img {
+.spotify-logo img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 53px;
+    height: 100%;
 }
 
 .spotify-logo h1 {
@@ -83,6 +107,10 @@ aside {
     cursor: pointer;
     background-color: #1ed760;
     color: black;
+}
+
+.upgrade-button button:focus {
+    outline: 0;
 }
 
 nav .nav-macro {
@@ -150,7 +178,7 @@ nav .nav-macro small {
 }
 
 .installapp-nav {
-    margin: 300px auto 0 auto;
+    margin: 270px auto 0 auto;
     width: 80%;
     border-bottom: 1px solid lightgrey;
     padding:10px 0;
@@ -186,4 +214,130 @@ nav .nav-macro small {
     font-weight: bold;
     font-size: 18px;
     margin-left: 10px;
+}
+
+.player-left {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex: 0 1 300px;
+    padding-left: 20px;
+}
+
+.player-left:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #282828, lightgrey);
+}
+
+.player-left:hover .ico-left i{
+    color: black;
+}
+
+.player-left:hover .title-song h6{
+    color: black;
+}
+
+.player-left .img-song img {
+    height: 100%;
+    width: 80px;
+}
+
+.title-song {
+    padding-left: 20px;
+    text-transform: capitalize;
+    width: 100px;
+}
+
+.title-song h6:first-child {
+    color: white;
+}
+
+.title-song h6{
+    color: #787878;
+}
+
+.ico-left {
+    margin-left: 20px;
+}
+
+.ico-left i {
+    margin-left: 10px;
+    color: #787878;
+}
+
+.ico-left i:hover {
+    opacity: 0.8
+}
+
+.player-center {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 1000px;
+}
+
+.interaction-player {
+    color: white;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.interaction-player i {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.interaction-player i:nth-child(3) {
+    font-size: 30px;
+}
+
+.row-player {
+    text-align: center;
+    width: 100%
+}
+
+.row-player span {
+    padding: 0 10px;
+    color: white;
+}
+
+.progressive-bar-player{
+    display: inline-block;
+    background-color: #5a5a5a;
+    width: 80%;
+    height: 5px;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+.progressive-line {
+    background-color: #c1c1c1;
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.player-right {
+    display: flex;
+    align-items: center;
+    flex: 0 1 300px;
+}
+
+.player-right i {
+    cursor: pointer;
+    color: white;
+    padding: 0 15px;
+}
+
+.player-right span {
+    display: inline-block;
+    content: "";
+    background-color: #5a5a5a;
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
 }
