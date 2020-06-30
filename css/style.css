@@ -47,7 +47,7 @@ aside {
     width: calc(100% - 200px );
     height: 749.6px;
     background: rgb(30,215,96);
-    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 35%, rgba(0,0,0,1) 100%); 
+    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 35%, rgba(0,0,0,1) 100%);
 }
 
 .player {
@@ -216,11 +216,122 @@ nav .nav-macro small {
     margin-left: 10px;
 }
 
+.category-main {
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-main ul {
+    list-style: none;
+}
+
+.category-main ul a {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.category-main ul a li {
+    float: left;
+    padding: 20px;
+}
+
+.category-main ul a li:hover {
+    color: black;
+}
+
+.created-for-you {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.created-for-you h2{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.created-for-you .song,
+.created-for-you .album{
+    position: relative;
+    float: left;
+    padding: 10px 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+
+.overlay .play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay .play-overlay i {
+    color: white;
+    font-size: 50px;
+}
+
+.song:hover .overlay,
+.album:hover .overlay{
+    display: block;
+}
+
+.overlay:hover .play-overlay i{
+    opacity: 1;
+}
+
+.song {
+    width: calc(100% / 6);
+    overflow: hidden;
+}
+
+.song img {
+    border-radius: 100px;
+}
+
+.album {
+    width: calc(100% / 6);
+    overflow: hidden;
+}
+
+.album img {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+
+
 .player-left {
     /* background-color: yellow; */
     display: flex;
     align-items: center;
-    flex: 0 1 300px;
+    flex: 0 0 300px;
     padding-left: 20px;
 }
 
@@ -275,7 +386,7 @@ nav .nav-macro small {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 0 1 1000px;
+    flex: 0 0 1000px;
 }
 
 .interaction-player {
@@ -324,7 +435,7 @@ nav .nav-macro small {
 .player-right {
     display: flex;
     align-items: center;
-    flex: 0 1 300px;
+    flex: 0 0 300px;
 }
 
 .player-right i {
