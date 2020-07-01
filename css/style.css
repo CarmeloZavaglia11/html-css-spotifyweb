@@ -400,14 +400,21 @@ nav .nav-macro small {
     margin-bottom: 25px;
 }
 
-.interaction-player i {
+.interaction-player  i {
     cursor: pointer;
     margin: 10px;
     font-size: 20px;
 }
 
-.interaction-player i:nth-child(3) {
+.interaction-player button i,.fa-pause{
+    font-size: 25px;
+}
+
+.interaction-player button {
     font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: 0;
 }
 
 .interaction-player i:hover {
@@ -443,6 +450,7 @@ nav .nav-macro small {
 .player-right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     flex: 0 0 300px;
 }
 
@@ -680,6 +688,7 @@ nav .nav-macro small {
     .player-right {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex: 0 0 100px;
     }
 
