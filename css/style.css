@@ -655,22 +655,22 @@ nav .nav-macro small {
     }
 
     .interaction-player {
-        width: inherit;
+        width: 100%;
         color: white;
         margin-bottom: 5px;
     }
 
     .interaction-player  i {
         cursor: pointer;
-        margin: 10px;
-        font-size: 20px;
+        margin: 5px;
+        font-size: 15px;
     }
     .interaction-player i:hover {
         color: rgba(255, 255, 255, 0.5);
     }
 
     .interaction-player button i,.fa-pause{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .interaction-player button {
