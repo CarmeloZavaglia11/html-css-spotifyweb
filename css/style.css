@@ -341,11 +341,10 @@ nav .nav-macro small {
 }
 
 .player-left {
-    /* background-color: yellow; */
     display: flex;
     align-items: center;
-    flex: 0 0 300px;
-    padding-left: 20px;
+    flex: 0 0 100px;
+    padding-left: 0px;
 }
 
 .player-left:hover {
@@ -354,10 +353,11 @@ nav .nav-macro small {
 
 .player-left .img-song img {
     height: 100%;
-    width: 80px;
+    width: 100px;
 }
 
 .title-song {
+    font-size: 15px;
     padding-left: 20px;
     text-transform: capitalize;
     width: 100px;
@@ -372,10 +372,11 @@ nav .nav-macro small {
 }
 
 .ico-left {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .ico-left i {
+    font-size: 15px;
     margin-left: 10px;
     color: #787878;
 }
@@ -385,12 +386,11 @@ nav .nav-macro small {
 }
 
 .player-center {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 0 0 1000px;
+    flex: 0 0 175px;
 }
 
 .interaction-player {
@@ -410,6 +410,10 @@ nav .nav-macro small {
     font-size: 30px;
 }
 
+.interaction-player i:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .row-player {
     text-align: center;
     width: 100%
@@ -423,7 +427,7 @@ nav .nav-macro small {
 .progressive-bar-player{
     display: inline-block;
     background-color: #5a5a5a;
-    width: 80%;
+    width: 77%;
     height: 5px;
     margin: 4px 0;
     border-radius: 5px;
@@ -908,7 +912,122 @@ nav .nav-macro small {
     }
 }
 
+/* END TABLET */
 
+/* MD DESKTOP */
+
+@media all and (min-width: 993px) and (max-width: 1199px ) {
+    .category-main ul a {
+        font-size: 12px;
+    }
+
+    .created-for-you {
+        width: 100%;
+    }
+
+    .song {
+        width: calc(100% / 4);
+        overflow: hidden;
+    }
+
+    .album {
+        width: calc(100% / 4);
+        overflow: hidden;
+    }
+
+    .player {
+        height: 134px;
+    }
+
+    .player-left {
+        display: flex;
+        align-items: center;
+        flex: 0 0 100px;
+        padding-left: 0;
+    }
+
+    .player-left .img-song img {
+        height: 100%;
+        width: 100px;
+    }
+
+    .title-song {
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .ico-left {
+        margin-left: 5px;
+    }
+
+    .ico-left i {
+        font-size: 15px;
+    }
+
+    .player-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 175px;
+    }
+
+    .interaction-player {
+        width: inherit;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .interaction-player i {
+        font-size: 15px;
+    }
+
+    .interaction-player i:nth-child(3) {
+        font-size: 25px;
+    }
+
+    .row-player {
+        text-align: center;
+        width: 100%;
+    }
+
+    .row-player span {
+        font-size: 10px;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .progressive-bar-player {
+        display: inline-block;
+        background-color: #5a5a5a;
+        width: 49%;
+        height: 5px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .player-right {
+        display: flex;
+        align-items: center;
+        flex: 0 0 230px;
+        justify-content: center;
+    }
+    .player-right i {
+        font-size: 15px;
+    }
+
+    .player-right span {
+        display: inline-block;
+        content: "";
+        background-color: #5a5a5a;
+        width: 20%;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+}
+
+/* END MD DESKTOP */
 
 
 
