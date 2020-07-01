@@ -417,6 +417,10 @@ nav .nav-macro small {
     border: 0;
 }
 
+.interaction-player button:focus {
+    outline: 0;
+}
+
 .interaction-player i:hover {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -655,14 +659,28 @@ nav .nav-macro small {
         margin-bottom: 5px;
     }
 
-    .interaction-player i {
+    .interaction-player  i {
         cursor: pointer;
         margin: 10px;
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .interaction-player i:hover {
+        color: rgba(255, 255, 255, 0.5);
     }
 
-    .interaction-player i:nth-child(3) {
-        font-size: 18px;
+    .interaction-player button i,.fa-pause{
+        font-size: 25px;
+    }
+
+    .interaction-player button {
+        font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .interaction-player button:focus {
+        outline: 0;
     }
 
     .row-player {
@@ -873,12 +891,28 @@ nav .nav-macro small {
         margin-bottom: 5px;
     }
 
-    .interaction-player i {
-        font-size: 15px;
+    .interaction-player  i {
+        cursor: pointer;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .interaction-player i:hover {
+        color: rgba(255, 255, 255, 0.5);
     }
 
-    .interaction-player i:nth-child(3) {
+    .interaction-player button i,.fa-pause{
         font-size: 25px;
+    }
+
+    .interaction-player button {
+        font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .interaction-player button:focus {
+        outline: 0;
     }
 
     .row-player {
@@ -925,7 +959,7 @@ nav .nav-macro small {
 
 /* MD DESKTOP */
 
-@media all and (min-width: 993px) and (max-width: 1199px ) {
+@media all and (min-width: 993px) and (max-width: 1199px) {
     .category-main ul a {
         font-size: 12px;
     }
@@ -987,12 +1021,52 @@ nav .nav-macro small {
         margin-bottom: 5px;
     }
 
-    .interaction-player i {
-        font-size: 15px;
+    .interaction-player  i {
+        cursor: pointer;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .interaction-player i:hover {
+        color: rgba(255, 255, 255, 0.5);
     }
 
-    .interaction-player i:nth-child(3) {
+    .interaction-player button i,.fa-pause{
         font-size: 25px;
+    }
+
+    .interaction-player button {
+        font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .interaction-player button:focus {
+        outline: 0;
+    }
+    
+    .interaction-player  i {
+        cursor: pointer;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .interaction-player i:hover {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .interaction-player button i,.fa-pause{
+        font-size: 25px;
+    }
+
+    .interaction-player button {
+        font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .interaction-player button:focus {
+        outline: 0;
     }
 
     .row-player {
