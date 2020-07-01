@@ -46,8 +46,10 @@ aside {
     top: 83px;
     width: calc(100% - 200px );
     height: calc(100% - 217px);
-    background: rgb(30,215,96);
-    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 50%, rgba(30,30,33,1) 100%);
+    /* background: rgb(30,215,96);
+    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 50%, rgba(30,30,33,1) 100%); */
+    background-image: url("https://images.alphacoders.com/477/thumb-1920-477025.jpg");
+    background-size: cover;
 }
 
 .player {
@@ -282,12 +284,28 @@ nav .nav-macro small {
     float: left;
     padding: 20px;
     margin-top: 5px;
+    animation: all 3s linear;
 }
 
 .category-main ul a li:hover {
     color: black;
-    box-shadow: inset 0 0 10px #000000;
-    border-radius: 50px;
+    animation: zoom 1s linear;
+    transform: scale(1.2);
+}
+
+@keyframes zoom {
+    0%,100% {
+        transform: scale(1.2);
+    }
+    25% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(0.9);
+    }
 }
 
 .created-for-you {
