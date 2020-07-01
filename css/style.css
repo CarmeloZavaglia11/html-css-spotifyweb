@@ -471,6 +471,7 @@ nav .nav-macro small {
     width: 30%;
     height: 5px;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 /* MEDIA QUERY */
@@ -724,6 +725,7 @@ nav .nav-macro small {
         width: 20%;
         height: 5px;
         border-radius: 5px;
+        margin-right: 10px;
     }
 
 
@@ -952,6 +954,7 @@ nav .nav-macro small {
         width: 20%;
         height: 5px;
         border-radius: 5px;
+        margin-right: 10px;
     }
 }
 
@@ -1044,7 +1047,7 @@ nav .nav-macro small {
     .interaction-player button:focus {
         outline: 0;
     }
-    
+
     .interaction-player  i {
         cursor: pointer;
         margin: 10px;
@@ -1106,6 +1109,7 @@ nav .nav-macro small {
         width: 20%;
         height: 5px;
         border-radius: 5px;
+        margin-right: 10px;
     }
 
 }
