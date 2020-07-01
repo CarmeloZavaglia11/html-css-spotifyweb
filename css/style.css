@@ -61,6 +61,46 @@ aside {
     z-index: 9999;
 }
 
+/* .player:hover {
+    animation: played 1s infinite linear;
+} */
+
+.playing {
+    animation: played 1s infinite linear;
+}
+
+@keyframes played {
+    0%,100%{
+        background: rgb(30,215,96);
+        background: -moz-linear-gradient(45deg, rgba(74,72,72,1) 0%, rgba(40,40,40,1) 25%, rgba(40,40,40,1) 50%, rgba(40,40,40,1) 75%);
+        background: -webkit-linear-gradient(45deg, rgba(74,72,72,1) 0%, rgba(40,40,40,1) 25%, rgba(40,40,40,1) 50%, rgba(40,40,40,1) 75%);
+        background: linear-gradient(45deg, rgba(74,72,72,1) 0%, rgba(40,40,40,1) 25%, rgba(40,40,40,1) 50%, rgba(40,40,40,1) 75%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4848",endColorstr="#282828",GradientType=1);
+    }
+    25% {
+        background: rgb(40,40,40);
+        background: -moz-linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(74,72,72,1) 25%, rgba(40,40,40,1) 50%, rgba(40,40,40,1) 75%);
+        background: -webkit-linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(74,72,72,1) 25%, rgba(40,40,40,1) 50%, rgba(40,40,40,1) 75%);
+        background: linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(74,72,72,1) 25%, rgba(40,40,40,1) 50%, rgba(40,40,40,1) 75%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#282828",GradientType=1);
+    }
+    50% {
+        background: rgb(40,40,40);
+        background: -moz-linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(40,40,40,1) 25%, rgba(74,72,72,1) 50%, rgba(40,40,40,1) 75%);
+        background: -webkit-linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(40,40,40,1) 25%, rgba(74,72,72,1) 50%, rgba(40,40,40,1) 75%);
+        background: linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(40,40,40,1) 25%, rgba(74,72,72,1) 50%, rgba(40,40,40,1) 75%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#282828",GradientType=1);
+    }
+    75% {
+        background: rgb(40,40,40);
+        background: -moz-linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(40,40,40,1) 25%, rgba(40,40,40,1) 50%, rgba(74,72,72,1) 75%);
+        background: -webkit-linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(40,40,40,1) 25%, rgba(40,40,40,1) 50%, rgba(74,72,72,1) 75%);
+        background: linear-gradient(45deg, rgba(40,40,40,1) 0%, rgba(40,40,40,1) 25%, rgba(40,40,40,1) 50%, rgba(74,72,72,1) 75%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#4a4848",GradientType=1);
+    }
+}
+
+
 /* FINE MACROAREE */
 
 .spotify-logo {
