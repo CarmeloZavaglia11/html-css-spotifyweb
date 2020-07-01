@@ -113,6 +113,10 @@ aside {
     outline: 0;
 }
 
+nav {
+    flex-grow: 2;
+}
+
 nav .nav-macro {
     color: lightgray;
     list-style: none;
@@ -178,10 +182,9 @@ nav .nav-macro small {
 }
 
 .installapp-nav {
-    margin: 270px auto 0 auto;
     width: 80%;
     border-bottom: 1px solid lightgrey;
-    padding:10px 0;
+    padding:10px 20px;
 }
 
 .installapp-nav:hover {
@@ -261,9 +264,13 @@ nav .nav-macro small {
 .created-for-you .song,
 .created-for-you .album{
     position: relative;
-    float: left;
     padding: 10px 10px;
     cursor: pointer;
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .overlay {
@@ -316,13 +323,13 @@ nav .nav-macro small {
 .album img {
     float: left;
     width: 50%;
-    height: 50%;
 }
 
 .titolo {
     width: 100%;
     display: inline-block;
     text-transform: capitalize;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 10px;
     padding: 10px;
@@ -331,7 +338,6 @@ nav .nav-macro small {
 
 #daily-mix {
     width: 100%;
-    height: 100%;
 }
 
 .player-left {
@@ -446,7 +452,464 @@ nav .nav-macro small {
     display: inline-block;
     content: "";
     background-color: #5a5a5a;
-    width: 50%;
+    width: 30%;
     height: 5px;
     border-radius: 5px;
 }
+
+/* MEDIA QUERY */
+
+/* PHONES  */
+
+
+@media all and (max-width: 768px) {
+
+    .spotify-logo {
+        display: flex;
+        flex: 0 0 50px;
+        padding: 0 0 0 0;
+    }
+
+    .spotify-logo img {
+        display: block;
+        width: 53px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .spotify-logo h1 {
+        display: none;
+    }
+
+    .upgrade-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100px;
+    }
+
+    .upgrade-button button {
+        font-size: 8px;
+        color: white;
+        background-color: transparent;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        border-radius: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .upgrade-button button:hover {
+        cursor: pointer;
+        background-color: #1ed760;
+        color: black;
+    }
+
+    aside {
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 53px;
+        color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: calc(100% - 113px);
+        width: 50px;
+        padding: 15px 0;
+        z-index: 99;
+    }
+
+    nav .nav-macro {
+        color: lightgray;
+        list-style: none;
+        text-transform: capitalize;
+        width: 50px;
+    }
+
+    nav .nav-macro small {
+        display: none;
+    }
+
+    nav .nav-macro li {
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+
+    nav .nav-macro li:hover {
+        border-left: 2px solid #1ed760;
+        color: white;
+    }
+
+    nav .nav-macro i {
+        width: inherit;
+        height: inherit;
+        font-size: 18px;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .installapp-nav:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .installapp-nav {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        border-bottom: 1px solid lightgrey;
+        padding: 10px 0 10px 0;
+    }
+
+    .installapp-nav i {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .installapp-nav small {
+        display: none;
+    }
+
+    .user {
+        cursor: pointer;
+        color: white;
+        width: 80%;
+        padding: 20px 0 0 17px;
+    }
+
+    .user i {
+        font-size: 18px;
+    }
+
+    .user small {
+        display: none;
+    }
+
+    .player {
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: #282828;
+        display: flex;
+        justify-content: space-between;
+        z-index: 9999;
+    }
+
+    .player-left {
+        display: flex;
+        align-items: center;
+        flex: 0 0 100px;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .player-left .img-song img {
+        height: 100%;
+        width: 30px;
+    }
+
+    .title-song {
+        font-size: 10px;
+        padding-left: 10px;
+        text-transform: capitalize;
+        width: 50px;
+    }
+
+    .ico-left {
+        margin-left: 5px;
+    }
+
+    .ico-left i {
+        font-size: 10px;
+        display: block;
+        margin-left: 0px;
+        color: #787878;
+    }
+
+    .player-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 175px;
+    }
+
+    .interaction-player {
+        width: inherit;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .interaction-player i {
+        cursor: pointer;
+        margin: 10px;
+        font-size: 10px;
+    }
+
+    .interaction-player i:nth-child(3) {
+        font-size: 18px;
+    }
+
+    .row-player {
+        text-align: center;
+        width: 100%;
+    }
+
+    .row-player span {
+        font-size: 10px;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .progressive-bar-player {
+        display: inline-block;
+        background-color: #5a5a5a;
+        width: 49%;
+        height: 5px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .player-right {
+        display: flex;
+        align-items: center;
+        flex: 0 0 100px;
+    }
+
+    .player-right i {
+        font-size: 10px;
+        cursor: pointer;
+        color: white;
+        padding: 0 5px;
+    }
+
+    .player-right span {
+        display: inline-block;
+        content: "";
+        background-color: #5a5a5a;
+        width: 20%;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+
+    .main-screen {
+        overflow-y: scroll;
+        position: fixed;
+        right: 0;
+        top: 53px;
+        width: calc(100% - 50px );
+        height: calc(100% - 113px);
+        background: rgb(30,215,96);
+        background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 50%, rgba(30,30,33,1) 100%);
+    }
+
+    .category-main ul a {
+        font-size: 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #f8f8f8;
+        text-decoration: none;
+    }
+
+    .category-main ul a li {
+        width: calc(100% / 4);
+        text-align: center;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .created-for-you {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .created-for-you h2 {
+        margin: 20px 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 45px;
+        left: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 200px;
+    }
+
+    .song {
+        width: calc(100% / 2);
+        overflow: hidden;
+    }
+
+    .song img {
+        border-radius: 200px;
+    }
+
+    .album {
+        width: calc(100% / 2);
+        overflow: hidden;
+    }
+
+    .album img {
+        float: left;
+        width: 50%;
+    }
+
+    .titolo {
+        width: 100%;
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* END PHONES */
+
+/* TABLETS */
+
+@media all and (min-width: 769px) and (max-width: 992px ) {
+    .installapp-nav {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        padding: 10px 0 10px 20px;
+    }
+
+    .category-main ul a li {
+        width: calc(100% / 3);
+        text-align: center;
+        float: left;
+        padding: 20px;
+        margin-top: 5px;
+    }
+
+    /* .created-for-you {
+        width: 100%;
+        margin: 0 auto;
+    } */
+
+    .song {
+        width: calc(100% / 2);
+        overflow: hidden;
+    }
+
+    .song img {
+        border-radius: 130px;
+    }
+
+    .album {
+        width: calc(100% / 2);
+        overflow: hidden;
+    }
+
+    .overlay {
+        border-radius: 130px;
+    }
+
+    .player {
+        height: 134px;
+    }
+
+    .player-left {
+        display: flex;
+        align-items: center;
+        flex: 0 0 100px;
+        padding-left: 0;
+    }
+
+    .player-left .img-song img {
+        height: 100%;
+        width: 100px;
+    }
+
+    .title-song {
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .ico-left {
+        margin-left: 5px;
+    }
+
+    .ico-left i {
+        font-size: 15px;
+    }
+
+    .player-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 175px;
+    }
+
+    .interaction-player {
+        width: inherit;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .interaction-player i {
+        font-size: 15px;
+    }
+
+    .interaction-player i:nth-child(3) {
+        font-size: 25px;
+    }
+
+    .row-player {
+        text-align: center;
+        width: 100%;
+    }
+
+    .row-player span {
+        font-size: 10px;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .progressive-bar-player {
+        display: inline-block;
+        background-color: #5a5a5a;
+        width: 49%;
+        height: 5px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .player-right {
+        display: flex;
+        align-items: center;
+        flex: 0 0 230px;
+        justify-content: center;
+    }
+    .player-right i {
+        font-size: 15px;
+    }
+
+    .player-right span {
+        display: inline-block;
+        content: "";
+        background-color: #5a5a5a;
+        width: 20%;
+        height: 5px;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+/* FINE MEDIA QUERY */
