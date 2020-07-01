@@ -45,9 +45,9 @@ aside {
     right: 0;
     top: 83px;
     width: calc(100% - 200px );
-    height: 749.6px;
+    height: calc(100% - 217px);
     background: rgb(30,215,96);
-    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 35%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 50%, rgba(30,30,33,1) 100%);
 }
 
 .player {
@@ -238,10 +238,13 @@ nav .nav-macro small {
 .category-main ul a li {
     float: left;
     padding: 20px;
+    margin-top: 5px;
 }
 
 .category-main ul a li:hover {
     color: black;
+    box-shadow: inset 0 0 10px #000000;
+    border-radius: 50px;
 }
 
 .created-for-you {
@@ -260,27 +263,17 @@ nav .nav-macro small {
     position: relative;
     float: left;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 .overlay {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 100px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 100px;
 }
 
@@ -299,6 +292,7 @@ nav .nav-macro small {
 .song:hover .overlay,
 .album:hover .overlay{
     display: block;
+    cursor: pointer;
 }
 
 .overlay:hover .play-overlay i{
@@ -325,7 +319,20 @@ nav .nav-macro small {
     height: 50%;
 }
 
+.titolo {
+    width: 100%;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
 
+#daily-mix {
+    width: 100%;
+    height: 100%;
+}
 
 .player-left {
     /* background-color: yellow; */
@@ -337,15 +344,6 @@ nav .nav-macro small {
 
 .player-left:hover {
     cursor: pointer;
-    background: linear-gradient(to left, #282828, lightgrey);
-}
-
-.player-left:hover .ico-left i{
-    color: black;
-}
-
-.player-left:hover .title-song h6{
-    color: black;
 }
 
 .player-left .img-song img {
