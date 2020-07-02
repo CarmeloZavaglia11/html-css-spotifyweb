@@ -25,7 +25,10 @@
 }
 
 aside {
-    background-color: black;
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,26,26,0.9920343137254902) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,26,26,0.9920343137254902) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(31,26,26,0.9920343137254902) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#1f1a1a",GradientType=1);
     position: fixed;
     left: 0;
     top: 83px;
@@ -171,6 +174,7 @@ nav .nav-macro a {
 }
 
 nav .nav-macro li {
+    transition: all 0.2s ease-in-out;
     padding:10px 0 0 20px;
 }
 
@@ -253,6 +257,7 @@ nav .nav-macro small {
 .user i {
     vertical-align: middle;
     font-size: 25px;
+    transition: all 0.5s linear;
 }
 
 .user small {
@@ -283,7 +288,7 @@ nav .nav-macro small {
 .category-main ul a li {
     float: left;
     padding: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
     animation: all 3s linear;
 }
 
@@ -291,6 +296,8 @@ nav .nav-macro small {
     color: black;
     animation: zoom 1s linear;
     transform: scale(1.2);
+    box-shadow: 0 0 14px #2f292d;
+    border-radius: 50px;
 }
 
 @keyframes zoom {
@@ -371,6 +378,7 @@ nav .nav-macro small {
 
 .song img {
     border-radius: 100px;
+    box-shadow: 0 0 14px #2f292d;
 }
 
 .album {
@@ -381,6 +389,7 @@ nav .nav-macro small {
 .album img {
     float: left;
     width: 50%;
+    box-shadow: 0 0 14px #2f292d;
 }
 
 .titolo {
@@ -794,8 +803,9 @@ nav .nav-macro small {
         top: 53px;
         width: calc(100% - 50px );
         height: calc(100% - 113px);
-        background: rgb(30,215,96);
-        background: linear-gradient(180deg, rgba(30,215,96,1) 0%, rgba(42,159,84,1) 50%, rgba(30,30,33,1) 100%);
+        background: 0;
+        background-image: url("https://images.alphacoders.com/477/thumb-1920-477025.jpg");
+        background-size: cover;
     }
 
     .category-main ul a {
@@ -807,7 +817,7 @@ nav .nav-macro small {
     }
 
     .category-main ul a li {
-        width: calc(100% / 4);
+        width: calc(100% / 1);
         text-align: center;
         padding: 8px;
         margin-top: 5px;
@@ -881,7 +891,7 @@ nav .nav-macro small {
         width: calc(100% / 3);
         text-align: center;
         float: left;
-        padding: 20px;
+        padding: 8px;
         margin-top: 5px;
     }
 
